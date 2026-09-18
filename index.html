@@ -1,64 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Central de Treinamento - Growth</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<title>Central - Treinamentos</title>
 <style>
-  body { font-family: 'Space Grotesk', sans-serif; background: #050505; }
-  .mono { font-family: 'JetBrains Mono', monospace; }
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background:#0a0a0a; color:#fff; padding: 30px 20px; }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 36px; font-weight: 900; letter-spacing:-1px; margin-bottom:8px; }
+  .sub { color:#888; font-size:14px; margin-bottom:40px; font-family: monospace; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px; }
+  .card { 
+    border:1px solid #222; background:#111; border-radius:20px; padding:24px; 
+    text-decoration:none; color:#fff; display:block; transition: all 0.2s;
+    position:relative; overflow:hidden;
+  }
+  .card:hover { border-color:#a3e635; transform: translateY(-2px); background:#151515; }
+  .card.red:hover { border-color:#ef4444; }
+  .badge { font-size:10px; font-family:monospace; padding:4px 8px; border-radius:20px; display:inline-block; margin-bottom:12px; font-weight:700; letter-spacing:1px; }
+  .badge.green { background:#a3e635; color:#000; }
+  .badge.red { background:#ef4444; color:#fff; }
+  .badge.white { background:#fff; color:#000; }
+  .card h3 { font-size:18px; line-height:1.2; margin-bottom:10px; }
+  .card p { color:#888; font-size:13px; line-height:1.5; margin-bottom:16px; }
+  .card .go { font-size:12px; font-family:monospace; color:#a3e635; }
+  .card.red .go { color:#ef4444; }
+  .footer { margin-top:50px; text-align:center; color:#444; font-family:monospace; font-size:10px; letter-spacing:2px; }
 </style>
 </head>
-<body class="bg-[#050505] text-white min-h-screen">
-  <div class="max-w-6xl mx-auto px-6 py-16">
-    <div class="text-center mb-16">
-      <div class="mono text-[10px] tracking-[0.3em] text-zinc-500 mb-4">MÉTODO BRINCO NO BUSINESS • 2026</div>
-      <h1 class="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.85]">CENTRAL DE<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-emerald-400">TREINAMENTO</span></h1>
-      <p class="mono text-zinc-400 mt-6 max-w-xl mx-auto text-sm">Dois módulos para parar de vender tráfego e virar médica de empresa. Da abordagem até o fechamento nível extinção.</p>
-    </div>
+<body>
+<div class="wrap">
+  <h1>CENTRAL DE<br>TREINAMENTO</h1>
+  <div class="sub">MÉTODO BRINCO NO BUSINESS • CLIQUE NO CARD PARA ENTRAR</div>
 
-    <div class="grid md:grid-cols-2 gap-6">
-      <!-- Card 1 -->
-      <div class="group relative border border-zinc-800 bg-zinc-900/50 p-8 rounded-[24px] hover:border-lime-400/50 transition-all duration-300 hover:bg-zinc-900">
-        <div class="flex justify-between items-start mb-6">
-          <span class="mono text-[10px] px-3 py-1 rounded-full bg-lime-400 text-black font-bold">MÓDULO 01 • BASE</span>
-          <span class="text-2xl">🧬</span>
-        </div>
-        <h2 class="text-2xl font-bold leading-tight mb-3">Treinamento Completo<br>Growth + Google Business</h2>
-        <p class="text-zinc-400 text-sm leading-relaxed mb-6">Metodologia completa pra sua amiga aprender a abordar. Diagnóstico por nicho, Raio-X de 10min, o que compra / o que gasta, e escada de produtos.</p>
-        <div class="space-y-2 mb-8 mono text-[11px] text-zinc-500">
-          <div>✓ Diagnóstico: QUER vs PRECISA</div>
-          <div>✓ Check de 15s no Google Business</div>
-          <div>✓ Produtos: Brinco + Agente IA + LTV</div>
-          <div>✓ Checklist de reunião e briefing</div>
-        </div>
-        <div class="text-lime-300 mono text-xs">→ Clique no link abaixo para acessar</div>
-      </div>
+  <div class="grid">
+    
+    <a class="card" href="./script-simples.html">
+      <div class="badge white">MÓDULO 01 • COMEÇA AQUI</div>
+      <h3>Script Simples<br>Sem Design</h3>
+      <p>Script puro pra copiar e colar na ligação. Sem frescura. Só o que falar do início ao fim pra marcar reunião. Ideal pra sua amiga começar hoje.</p>
+      <div class="go">→ ABRIR SCRIPT SIMPLES</div>
+    </a>
 
-      <!-- Card 2 -->
-      <div class="group relative border border-zinc-800 bg-zinc-900/50 p-8 rounded-[24px] hover:border-red-500/50 transition-all duration-300 hover:bg-zinc-900">
-        <div class="flex justify-between items-start mb-6">
-          <span class="mono text-[10px] px-3 py-1 rounded-full bg-red-500 text-white font-bold">MÓDULO 02 • FECHAMENTO</span>
-          <span class="text-2xl">☠️</span>
-        </div>
-        <h2 class="text-2xl font-bold leading-tight mb-3">Script Progressivo<br>Nível Extinção</h2>
-        <p class="text-zinc-400 text-sm leading-relaxed mb-6">Script assassino de 5 níveis progressivos até o cliente achar que vai falir se não fechar com você. Terror psicológico + mistério.</p>
-        <div class="space-y-2 mb-8 mono text-[11px] text-zinc-500">
-          <div>✓ Nível 1: Curiosidade + Quebra de Padrão</div>
-          <div>✓ Nível 3: Terror - Timeline da Extinção</div>
-          <div>✓ Nível 4: Oásis - Brinco no Business</div>
-          <div>✓ Fechamento com escassez de bairro</div>
-        </div>
-        <div class="text-red-400 mono text-xs">→ Clique no link abaixo para acessar</div>
-      </div>
-    </div>
+    <a class="card" href="./Treinamento-Growth-Google-Business.html">
+      <div class="badge green">MÓDULO 02 • BASE</div>
+      <h3>Treinamento Completo<br>Growth + Google Business</h3>
+      <p>Metodologia completa: diagnóstico por nicho, Raio-X de 10min, o que compra/o que gasta, escada de produtos.</p>
+      <div class="go">→ ABRIR TREINAMENTO COMPLETO</div>
+    </a>
 
-    <div class="mt-16 text-center mono text-[10px] text-zinc-600 tracking-widest">
-      FEITO PARA FECHAR CLIENTES QUE PAGAM BEM • NÃO VENDA TRÁFEGO, VENDA CRESCIMENTO
-    </div>
+    <a class="card red" href="./Script-Captacao-Progressivo-Mortal.html">
+      <div class="badge red">MÓDULO 03 • FECHAMENTO</div>
+      <h3>Script Progressivo<br>Nível Extinção</h3>
+      <p>Script de 5 níveis até o cliente achar que vai falir se não fechar. Curiosidade, Dor, Terror, Solução e Fechamento.</p>
+      <div class="go">→ ABRIR SCRIPT MORTAL</div>
+    </a>
+
   </div>
+
+  <div class="footer">FEITO PARA FECHAR CLIENTES QUE PAGAM BEM • NÃO VENDA TRÁFEGO, VENDA CRESCIMENTO</div>
+</div>
 </body>
 </html>
